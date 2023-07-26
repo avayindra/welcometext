@@ -1,0 +1,63 @@
+* {
+  font-family: "Ysabeau Infant", sans-serif;
+  letter-spacing: 1px;
+}
+
+body {
+  background-color: darkgrey;
+  padding: 1rem;
+}
+
+.users {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.5rem;
+}
+
+.user {
+  background-color: dodgerblue;
+  padding: 0.5rem;
+}
+
+nav {
+  height: 10vh;
+  background-color: blueviolet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-link {
+  color: white;
+  margin: 1rem;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: deeppink;
+}
+
+nav .active {
+  color: rgb(114, 13, 13);
+}
+
+section {
+  display: grid;
+  grid-gap: 1rem;
+}
+
+article {
+  background-color: cadetblue;
+}
+
+@media screen and (min-width: 600px) {
+  section {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  section {
+    grid-template-columns: auto auto auto;
+  }
+}
